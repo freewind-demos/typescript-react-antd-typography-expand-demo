@@ -1,9 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
+import { Hello } from './hello'
 
-import {Hello} from './hello'
+import 'antd/dist/reset.css'
 
-ReactDOM.render(
-  <Hello/>,
-  document.body
+const rootElement = document.getElementById('root')
+if (!rootElement) throw new Error('Failed to find the root element')
+
+const root = ReactDOM.createRoot(rootElement)
+root.render(
+  <React.StrictMode>
+    <Hello />
+  </React.StrictMode>
 )

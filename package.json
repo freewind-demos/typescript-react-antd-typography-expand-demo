@@ -1,20 +1,22 @@
 {
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@ant-design/icons": "^5.5.1",
+    "antd": "5.22.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
-    "@types/react": "17.0.40",
-    "@types/react-dom": "17.0.13",
-    "antd": "5.0.5",
-    "@parcel/transformer-typescript-tsc": "^2.9.3",
-    "parcel": "^2.9.3",
-    "process": "^0.11.10"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
   },
   "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e"
 }
